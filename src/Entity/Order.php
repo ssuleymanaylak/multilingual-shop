@@ -1,0 +1,190 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Entity;
+
+use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Post;
+use App\Commerce\ApiPlatform\Error\CartProductsUnavailableException;
+use App\Commerce\ApiPlatform\Input\CheckoutOrderInput;
+use App\Commerce\ApiPlatform\State\CheckoutOrderProcessor;
+use App\Commerce\Repository\OrderRepository;
+use App\Money\DecimalMoney;
+use DateTimeImmutable;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Types\Types;
+use Doctrine\ORM\Mapping\Column;
+use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\GeneratedValue;
+use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\JoinColumn;
+use Doctrine\ORM\Mapping\ManyToOne;
+use Doctrine\ORM\Mapping\OneToMany;
+use Doctrine\ORM\Mapping\Table;
+use Symfony\Component\Serializer\Attribute\Groups;
+
+#[Table(name: '`order`'),
+    Entity(repositoryClass: OrderRepository::class)]
+#[ApiResource(operations: [
+    new GetCollection(
+        normalizationContext: ['groups' => ['order:list']],
+        security: "is_granted('ROLE_ADMIN')",
+        name: 'api_orders_get_collection'
+    ),
+    new Post(
+        errors: [CartProductsUnavailableException::class],
+        normalizationContext: ['groups' => ['order:list:write']],
+        denormalizationContext: ['allow_extra_attributes' => false],
+        security: "is_granted('ROLE_USER')",
+        input: CheckoutOrderInput::class,
+        name: 'api_orders_post_collection',
+        processor: CheckoutOrderProcessor::class
+    ),
+    new Get(
+        normalizationContext: ['groups' => ['order:item']],
+        security: "is_granted('ROLE_ADMIN')",
+        name: 'api_orders_get_item'
+    ),
+])]
+class Order
+{
+    #[Id, GeneratedValue, Column(type: Types::INTEGER)]
+    #[Groups(['order:item'])]
+    protected ?int $id;
+
+    #[Column(type: Types::DATETIME_IMMUTABLE)]
+    protected DateTimeImmutable $createdAt;
+
+    #[Column(type: Types::DATETIME_IMMUTABLE)]
+    protected DateTimeImmutable $updatedAt;
+
+    #[ManyToOne(targetEntity: User::class, inversedBy: 'orders'), JoinColumn(nullable: false)]
+    protected ?User $owner;
+
+    #[Column(type: Types::INTEGER)]
+    #[Groups(['order:item'])]
+    protected ?int $status;
+
+    #[Column(type: Types::DECIMAL, precision: 19, scale: 2, nullable: true)]
+    #[Groups(['order:item'])]
+    protected ?string $totalPrice = null;
+
+    #[Column(type: Types::BOOLEAN)]
+    protected bool $isDeleted;
+
+    #[OneToMany(mappedBy: 'appOrder', targetEntity: OrderProduct::class, cascade: ['persist', 'remove'], orphanRemoval: true)]
+    #[Groups(['order:item'])]
+    protected Collection $orderProducts;
+
+    public function __construct()
+    {
+        $this->id = null;
+        $this->isDeleted = false;
+        $this->createdAt = new DateTimeImmutable();
+        $this->updatedAt = new DateTimeImmutable();
+        $this->orderProducts = new ArrayCollection();
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getCreatedAt(): ?DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(DateTimeImmutable $createdAt): static
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getOwner(): ?User
+    {
+        return $this->owner;
+    }
+
+    public function setOwner(?User $owner): static
+    {
+        $this->owner = $owner;
+
+        return $this;
+    }
+
+    public function getStatus(): ?int
+    {
+        return $this->status;
+    }
+
+    public function setStatus(int $status): static
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    public function getTotalPrice(): ?string
+    {
+        return null === $this->totalPrice ? null : DecimalMoney::normalize($this->totalPrice);
+    }
+
+    public function setTotalPrice(?string $totalPrice): static
+    {
+        $this->totalPrice = null === $totalPrice ? null : DecimalMoney::normalize($totalPrice);
+
+        return $this;
+    }
+
+    public function getUpdatedAt(): ?DateTimeImmutable
+    {
+        return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(?DateTimeImmutable $updatedAt): static
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    public function getIsDeleted(): ?bool
+    {
+        return $this->isDeleted;
+    }
+
+    public function setIsDeleted(bool $isDeleted): static
+    {
+        $this->isDeleted = $isDeleted;
+
+        return $this;
+    }
+
+    public function getOrderProducts(): Collection
+    {
+        return $this->orderProducts;
+    }
+
+    public function addOrderProduct(OrderProduct $orderProduct): self
+    {
+        if (!$this->orderProducts->contains($orderProduct)) {
+            $this->orderProducts[] = $orderProduct;
+            $orderProduct->setAppOrder($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOrderProduct(OrderProduct $orderProduct): self
+    {
+        $this->orderProducts->removeElement($orderProduct);
+
+        return $this;
+    }
+}

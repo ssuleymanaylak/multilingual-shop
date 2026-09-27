@@ -1,23 +1,92 @@
-# yaml-language-server: $schema=../vendor/symfony/dependency-injection/Loader/schema/services.schema.json
-
 # This file is the entry point to configure your own services.
 # Files in the packages/ subdirectory configure your dependencies.
-# See also https://symfony.com/doc/current/service_container/import.html
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
+  timezone: '%env(APP_TIMEZONE)%'
+  uploads_dir: '%kernel.project_dir%/public/uploads'
+  uploads_temp_dir: '%kernel.project_dir%/var/temp'
+  uploads_images_dir: '%uploads_dir%/images'
+  product_images_dir: '%uploads_images_dir%/products'
+  product_images_url: '/uploads/images/products'
+  locale: 'ru'
+  app_locales: ru|en
+  app_locales.in_brackets: '(%app_locales%)'
+  admin_email: '%env(ADMIN_EMAIL)%'
 
 services:
-    # default configuration for services in *this* file
-    _defaults:
-        autowire: true      # Automatically injects dependencies in your services.
-        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+    bind:
+      string $uploadsTempDir: '%uploads_temp_dir%'
+      string $productImagesDir: '%product_images_dir%'
+      string $defaultLocale: '%locale%'
 
-    # makes classes in src/ available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
-    App\:
-        resource: '../src/'
+  # makes classes in src/ available to be used as services
+  # this creates a service per class whose id is the fully-qualified class name
+  App\:
+    resource: '../src/'
+    exclude:
+      - '../src/Entity/'
+      - '../src/AdminBundle/AdminBundle.php'
+      - '../src/Kernel.php'
+      - '../src/OAuthBundle/OAuthBundle.php'
+      - '../src/SeoBundle/SeoBundle.php'
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+  Imagine\Gd\Imagine:
+    class: Imagine\Gd\Imagine
+
+  # Unsupported output-format errors for protected operations are coordinated
+  # with API Platform's own security providers by the application listener.
+  api_platform.listener.request.add_format:
+    class: ApiPlatform\Symfony\EventListener\AddFormatListener
+    arguments:
+      - '@api_platform.state_provider.content_negotiation'
+      - '@api_platform.metadata.resource.metadata_collection_factory'
+
+  App\Security\EventListener\ApiSecurityContentNegotiationListener:
+    arguments:
+      $addFormatListener: '@api_platform.listener.request.add_format'
+    tags:
+      - { name: kernel.event_listener, event: kernel.request, method: onEarlyKernelRequest, priority: 28 }
+      - { name: kernel.event_listener, event: kernel.request, method: onPostReadKernelRequest, priority: 3 }
+      - { name: kernel.event_listener, event: kernel.request, method: onPostDeserializeKernelRequest, priority: 1 }
+
+  App\OAuthBundle\Security\OAuth\OAuthProviderAvailability:
+    arguments:
+      $enabled:
+        google: '%env(bool:OAUTH_GOOGLE_ENABLED)%'
+        yandex: '%env(bool:OAUTH_YANDEX_ENABLED)%'
+        vkontakte: '%env(bool:OAUTH_VK_ENABLED)%'
+        github_en: '%env(bool:OAUTH_GITHUB_EN_ENABLED)%'
+        github_rus: '%env(bool:OAUTH_GITHUB_RUS_ENABLED)%'
+        facebook: '%env(bool:OAUTH_FACEBOOK_ENABLED)%'
+        linkedin: '%env(bool:OAUTH_LINKEDIN_ENABLED)%'
+        mailru: '%env(bool:OAUTH_MAILRU_ENABLED)%'
+      $credentials:
+        google:
+          clientId: '%env(OAUTH_GOOGLE_ID)%'
+          clientSecret: '%env(OAUTH_GOOGLE_SECRET)%'
+        yandex:
+          clientId: '%env(OAUTH_YANDEX_CLIENT_ID)%'
+          clientSecret: '%env(OAUTH_YANDEX_CLIENT_SECRET)%'
+        vkontakte:
+          clientId: '%env(OAUTH_VK_CLIENT_ID)%'
+          clientSecret: '%env(OAUTH_VK_CLIENT_SECRET)%'
+        github_en:
+          clientId: '%env(OAUTH_GITHUB_EN_CLIENT_ID)%'
+          clientSecret: '%env(OAUTH_GITHUB_EN_CLIENT_SECRET)%'
+        github_rus:
+          clientId: '%env(OAUTH_GITHUB_RUS_CLIENT_ID)%'
+          clientSecret: '%env(OAUTH_GITHUB_RUS_CLIENT_SECRET)%'
+        facebook:
+          clientId: '%env(OAUTH_FACEBOOK_CLIENT_ID)%'
+          clientSecret: '%env(OAUTH_FACEBOOK_CLIENT_SECRET)%'
+        linkedin:
+          clientId: '%env(OAUTH_LINKEDIN_CLIENT_ID)%'
+          clientSecret: '%env(OAUTH_LINKEDIN_CLIENT_SECRET)%'
+  # add more service definitions when explicit configuration is needed
+  # please note that last definitions always *replace* previous ones

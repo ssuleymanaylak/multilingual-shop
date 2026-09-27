@@ -9,11 +9,14 @@ class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
 
-    /**
-     * @return list<string> An array of allowed values for APP_ENV
-     */
-    private function getAllowedEnvs(): array
+    public function boot(): void
     {
-        return ['prod', 'dev', 'test'];
+        parent::boot();
+
+        $timezone = $this->getContainer()->getParameter('timezone');
+        if (empty($timezone)) {
+            $timezone = date_default_timezone_get();
+        }
+        date_default_timezone_set($timezone);
     }
 }

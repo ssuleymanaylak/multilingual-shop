@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="ru" trgLang="ru">
+  <file id="messages.ru">
+    <unit id="lXPuHWG" name="homepage.head">
+      <segment>
+        <source>homepage.head</source>
+        <target>Главная страница</target>
+      </segment>
+    </unit>
+    <unit id="c5RgwuI" name="homepage.description">
+      <segment>
+        <source>homepage.description</source>
+        <target>Главная страница "Symfony shop"</target>
+      </segment>
+    </unit>
+    <unit id="r4_BN2A" name="registration_form.head">
+      <segment>
+        <source>registration_form.head</source>
+        <target>Регистрация</target>
+      </segment>
+    </unit>
+    <unit id="EmmBUpP" name="registration_form.sing_up">
+      <segment>
+        <source>registration_form.sing_up</source>
+        <target>Зарегистрироваться</target>
+      </segment>
+    </unit>
+    <unit id="wiSvPLo" name="registration_form.enter_your_email">
+      <segment>
+        <source>registration_form.enter_your_email</source>
+        <target>Адрес электронной почты</target>
+      </segment>
+    </unit>
+    <unit id="j80Lrbb" name="registration_form.enter_your_password">
+      <segment>
+        <source>registration_form.enter_your_password</source>
+        <target>Пароль</target>
+      </segment>
+    </unit>
+    <unit id="aTc4FGy" name="registration_form.agree_to_term">
+      <segment>
+        <source>registration_form.agree_to_term</source>
+        <target>Я согласен с</target>
+      </segment>
+    </unit>
+    <unit id="tTpKC65" name="registration_form.privacy policy">
+      <segment>
+        <source>registration_form.privacy policy</source>
+        <target>политикой конфиденциальности*</target>
+      </segment>
+    </unit>
+    <unit id="3KlZ252" name="registration_form.placeholder.email">
+      <segment>
+        <source>registration_form.placeholder.email</source>
+        <target>Пожалуйста, введите свой адрес электронной почты</target>
+      </segment>
+    </unit>
+    <unit id="4U0QJ9N" name="registration_form.placeholder.plainPassword">
+      <segment>
+        <source>registration_form.placeholder.plainPassword</source>
+        <target>Пожалуйста, введите свой пароль</target>
+      </segment>
+    </unit>
+    <unit id="QrS7ow1" name="login_form.head">
+      <segment>
+        <source>login_form.head</source>
+        <target>Авторизация</target>
+      </segment>
+    </unit>
+    <unit id="Lh40vxz" name="login_form.your_email">
+      <segment>
+        <source>login_form.your_email</source>
+        <target>Адрес электронной почты</target>
+      </segment>
+    </unit>
+    <unit id="rUSPg1s" name="login_form.your_password">
+      <segment>
+        <source>login_form.your_password</source>
+        <target>Пароль</target>
+      </segment>
+    </unit>
+    <unit id="2x3VTQU" name="login_form.remember_me">
+      <segment>
+        <source>login_form.remember_me</source>
+        <target>Запомнить меня</target>
+      </segment>
+    </unit>
+    <unit id="B2kVNFj" name="login_form.login_in">
+      <segment>
+        <source>login_form.login_in</source>
+        <target>Авторизоваться</target>
+      </segment>
+    </unit>
+    <unit id="Gcl4Ggy" name="login_form.create_account">
+      <segment>
+        <source>login_form.create_account</source>
+        <target>Создать Аккаунт</target>
+      </segment>
+    </unit>
+    <unit id="SPJ0hy3" name="login_form.reset_password">
+      <segment>
+        <source>login_form.reset_password</source>
+        <target>Сбросить пароль</target>
+      </segment>
+    </unit>
+    <unit id="jfrzqFi" name="login_form.placeholder.email">
+      <segment>
+        <source>login_form.placeholder.email</source>
+        <target>Пожалуйста, введите свой адрес электронной почты</target>
+      </segment>
+    </unit>
+    <unit id="jAt5sa7" name="login_form.placeholder.password">
+      <segment>
+        <source>login_form.placeholder.password</source>
+        <target>Пожалуйста, введите свой пароль</target>
+      </segment>
+    </unit>
+    <unit id="fMh4sHM" name="personal_account.head">
+      <segment>
+        <source>personal_account.head</source>
+        <target>Добро пожаловать в ЛК</target>
+      </segment>
+    </unit>
+    <unit id="W35IaBF" name="personal_account.labels.email">
+      <notes>
+        <note category="state" priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>personal_account.labels.email</source>
+        <target>Адрес электронной почты</target>
+      </segment>
+    </unit>
+    <unit id="bCpdUR_" name="personal_account.labels.full_name">
+      <segment>
+        <source>personal_account.labels.full_name</source>
+        <target>ФИО</target>
+      </segment>
+    </unit>
+    <unit id="Nkrqqoa" name="personal_account.labels.phone">
+      <segment>
+        <source>personal_account.labels.phone</source>
+        <target>Телефон</target>
+      </segment>
+    </unit>
+    <unit id="E4F2nlg" name="personal_account.labels.address">
+      <segment>
+        <source>personal_account.labels.address</source>
+        <target>Адрес</target>
+      </segment>
+    </unit>
+    <unit id="jdD9diA" name="personal_account.labels.zipcode">
+      <segment>
+        <source>personal_account.labels.zipcode</source>
+        <target>Почтовый индекс</target>
+      </segment>
+    </unit>
+    <unit id="b2aNZ24" name="personal_account.logout">
+      <segment>
+        <source>personal_account.logout</source>
+        <target>Разлогиниться</target>
+      </segment>
+    </unit>
+    <unit id="nT_otEb" name="personal_account.message">
+      <segment>
+        <source>personal_account.message</source>
+        <target>Прежде чем сделать заказ, заполните полную информацию.</target>
+      </segment>
+    </unit>
+    <unit id="OLOJRd_" name="personal_account.edit_profile">
+      <segment>
+        <source>personal_account.edit_profile</source>
+        <target>Редактировать ЛК</target>
+      </segment>
+    </unit>
+    <unit id="sAGmfIM" name="personal_account.edit.head">
+      <segment>
+        <source>personal_account.edit.head</source>
+        <target>Редактировать ЛК</target>
+      </segment>
+    </unit>
+    <unit id="9i.9TQk" name="personal_account.edit.labels.full_name">
+      <segment>
+        <source>personal_account.edit.labels.full_name</source>
+        <target>Введите ФИО</target>
+      </segment>
+    </unit>
+    <unit id="RGvdWZG" name="personal_account.edit.labels.phone">
+      <segment>
+        <source>personal_account.edit.labels.phone</source>
+        <target>Введите телефон</target>
+      </segment>
+    </unit>
+    <unit id="7J2mYw8" name="personal_account.edit.labels.address">
+      <segment>
+        <source>personal_account.edit.labels.address</source>
+        <target>Введите адрес</target>
+      </segment>
+    </unit>
+    <unit id="rITpBD6" name="personal_account.edit.labels.zipcode">
+      <segment>
+        <source>personal_account.edit.labels.zipcode</source>
+        <target>Введите почтовый индекс</target>
+      </segment>
+    </unit>
+    <unit id="u2.T0Zn" name="personal_account.edit.save_changes">
+      <segment>
+        <source>personal_account.edit.save_changes</source>
+        <target>Сохранить изменения</target>
+      </segment>
+    </unit>
+    <unit id="ha85IfI" name="login_social_network.google">
+      <segment>
+        <source>login_social_network.google</source>
+        <target>Авторизоваться через Гугл</target>
+      </segment>
+    </unit>
+    <unit id="gcS9qZH" name="similar_products.head">
+      <segment>
+        <source>similar_products.head</source>
+        <target>Мы рекомендуем</target>
+      </segment>
+    </unit>
+    <unit id="S0XXenV" name="similar_products.new">
+      <segment>
+        <source>similar_products.new</source>
+        <target>Новинка</target>
+      </segment>
+    </unit>
+    <unit id="TRwNpB2" name="product.add_to_cart">
+      <segment>
+        <source>product.add_to_cart</source>
+        <target>Добавить в корзину</target>
+      </segment>
+    </unit>
+    <unit id="kUcEAff" name="product.new">
+      <notes>
+        <note category="state" priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>product.new</source>
+        <target>Новинка</target>
+      </segment>
+    </unit>
+    <unit id="pva0Rcs" name="product.products_not_fount">
+      <segment>
+        <source>product.products_not_fount</source>
+        <target>Продукты не найдены</target>
+      </segment>
+    </unit>
+    <unit id="Vyg85xR" name="category.show_me">
+      <segment>
+        <source>category.show_me</source>
+        <target>Перейти</target>
+      </segment>
+    </unit>
+    <unit id="Lcq9C74" name="category.new_collection">
+      <segment>
+        <source>category.new_collection</source>
+        <target>Новая коллекция</target>
+      </segment>
+    </unit>
+    <unit id="wsxlpC1" name="category.unique">
+      <segment>
+        <source>category.unique</source>
+        <target>Уникальное предложение</target>
+      </segment>
+    </unit>
+    <unit id="A7aJqVD" name="cart.head">
+      <segment>
+        <source>cart.head</source>
+        <target>Корзина</target>
+      </segment>
+    </unit>
+    <unit id="mXgcRUg" name="cart.make_order">
+      <segment>
+        <source>cart.make_order</source>
+        <target>Сделать заказ</target>
+      </segment>
+    </unit>
+    <unit id="15HKn_4" name="cart.view_cart">
+      <segment>
+        <source>cart.view_cart</source>
+        <target>Перейти</target>
+      </segment>
+    </unit>
+    <unit id="xSFsL6S" name="cart.checkout">
+      <segment>
+        <source>cart.checkout</source>
+        <target>Отчистить</target>
+      </segment>
+    </unit>
+    <unit id="TZ42rW1" name="cart.total_price">
+      <segment>
+        <source>cart.total_price</source>
+        <target>Всего</target>
+      </segment>
+    </unit>
+    <unit id="RE7.btt" name="cart.cart_empty">
+      <segment>
+        <source>cart.cart_empty</source>
+        <target>В корзине нет товаров...</target>
+      </segment>
+    </unit>
+    <unit id=".09btFF" name="cart.login">
+      <segment>
+        <source>cart.login</source>
+        <target>Авторизоваться</target>
+      </segment>
+    </unit>
+    <unit id="NKpUSVZ" name="cart.product">
+      <segment>
+        <source>cart.product</source>
+        <target>Продукт</target>
+      </segment>
+    </unit>
+    <unit id="6tg59Xv" name="cart.quantity">
+      <segment>
+        <source>cart.quantity</source>
+        <target>Количество</target>
+      </segment>
+    </unit>
+    <unit id="TfEGkQ8" name="cart.price">
+      <segment>
+        <source>cart.price</source>
+        <target>Цена</target>
+      </segment>
+    </unit>
+    <unit id="o9XHtVl" name="cart.actions">
+      <segment>
+        <source>cart.actions</source>
+        <target>Действия</target>
+      </segment>
+    </unit>
+    <unit id="B3XnusQ" name="cart.total">
+      <segment>
+        <source>cart.total</source>
+        <target>Всего</target>
+      </segment>
+    </unit>
+    <unit id="ntyiaVp" name="header_menu.en">
+      <segment>
+        <source>header_menu.en</source>
+        <target>Англ</target>
+      </segment>
+    </unit>
+    <unit id="gY41A3z" name="header_menu.ru">
+      <segment>
+        <source>header_menu.ru</source>
+        <target>Рус</target>
+      </segment>
+    </unit>
+    <unit id="CLim83C" name="header_menu.profile">
+      <segment>
+        <source>header_menu.profile</source>
+        <target>Профиль</target>
+      </segment>
+    </unit>
+    <unit id="327Md61" name="header_menu.login">
+      <segment>
+        <source>header_menu.login</source>
+        <target>Авторизоваться</target>
+      </segment>
+    </unit>
+    <unit id="ys0D7Zs" name="footer.user_links.head">
+      <segment>
+        <source>footer.user_links.head</source>
+        <target>Полезные ссылки</target>
+      </segment>
+    </unit>
+    <unit id="WAamuyU" name="footer.user_links.homepage">
+      <segment>
+        <source>footer.user_links.homepage</source>
+        <target>Главная страница</target>
+      </segment>
+    </unit>
+    <unit id="wDid4aM" name="footer.user_links.sing_up">
+      <segment>
+        <source>footer.user_links.sing_up</source>
+        <target>Зарегистрироваться</target>
+      </segment>
+    </unit>
+    <unit id="BpVSp5k" name="footer.user_links.login">
+      <segment>
+        <source>footer.user_links.login</source>
+        <target>Авторизоваться</target>
+      </segment>
+    </unit>
+    <unit id="CZzNFQv" name="footer.user_links.logout">
+      <segment>
+        <source>footer.user_links.logout</source>
+        <target>Разлогиниться</target>
+      </segment>
+    </unit>
+    <unit id="Qjx81r4" name="footer.my_account.head">
+      <segment>
+        <source>footer.my_account.head</source>
+        <target>Личный кабинет</target>
+      </segment>
+    </unit>
+    <unit id="gwXKvDO" name="footer.my_account.sing_up">
+      <notes>
+        <note category="state" priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>footer.my_account.sing_up</source>
+        <target>Зарегистрироваться</target>
+      </segment>
+    </unit>
+    <unit id="WephpFk" name="footer.my_account.view_cart">
+      <segment>
+        <source>footer.my_account.view_cart</source>
+        <target>Просмотреть корзину</target>
+      </segment>
+    </unit>
+    <unit id="y0znEit" name="footer.my_account.my_profile">
+      <segment>
+        <source>footer.my_account.my_profile</source>
+        <target>Мой профиль</target>
+      </segment>
+    </unit>
+    <unit id="U1.oe1f" name="footer.сhange_language.head">
+      <segment>
+        <source>footer.сhange_language.head</source>
+        <target>Сменить язык</target>
+      </segment>
+    </unit>
+    <unit id="XWxjqbj" name="footer.сhange_language.russian">
+      <segment>
+        <source>footer.сhange_language.russian</source>
+        <target>Русский</target>
+      </segment>
+    </unit>
+    <unit id="MGYMt0g" name="footer.сhange_language.english">
+      <segment>
+        <source>footer.сhange_language.english</source>
+        <target>Английский</target>
+      </segment>
+    </unit>
+    <unit id="NF.vvAN" name="You have to login in order to access this page.">
+      <segment>
+        <source>You have to login in order to access this page.</source>
+        <target>Вам необходимо войти в систему, чтобы получить доступ к этой странице.</target>
+      </segment>
+    </unit>
+    <unit id="LmUPn4A">
+      <segment>
+        <source>An email has been sent. Please check inbox to find password and verified your email</source>
+        <target>Было отправлено электронное письмо. Пожалуйста, проверьте входящие, чтобы найти пароль и подтвердить свой адрес электронной почты</target>
+      </segment>
+    </unit>
+    <unit id="B0TWyUS" name="Please log in to the site!">
+      <segment>
+        <source>Please log in to the site!</source>
+        <target>Пожалуйста, авторизуйтесь на сайте!</target>
+      </segment>
+    </unit>
+    <unit id="2CtFRyk" name="The order successfully created">
+      <segment>
+        <source>The order successfully created</source>
+        <target>Заказ успешно создан</target>
+      </segment>
+    </unit>
+    <unit id="vN4SXKk" name="An email has been sent. Please check your inbox to complete registration.">
+      <segment>
+        <source>An email has been sent. Please check your inbox to complete registration.</source>
+        <target>Было отправлено электронное письмо. Пожалуйста, проверьте свой почтовый ящик, чтобы завершить регистрацию.</target>
+      </segment>
+    </unit>
+    <unit id="kQWnsB7" name="Your email address has been verified.">
+      <segment>
+        <source>Your email address has been verified.</source>
+        <target>Ваш адрес электронной почты был подтвержден.</target>
+      </segment>
+    </unit>
+    <unit id="jbqF3b8" name="Your changes were saved!">
+      <segment>
+        <source>Your changes were saved!</source>
+        <target>Ваши изменения были сохранены!</target>
+      </segment>
+    </unit>
+    <unit id="XiHUjmn" name="Something went wrong. Please check!">
+      <segment>
+        <source>Something went wrong. Please check!</source>
+        <target>Что-то пошло не так. Пожалуйста, проверьте!</target>
+      </segment>
+    </unit>
+    <unit id="giREF.l" name="email">
+      <segment>
+        <source>email</source>
+        <target>Электронное письмо</target>
+      </segment>
+    </unit>
+    <unit id="PdnfREH" name="New password">
+      <segment>
+        <source>New password</source>
+        <target>Новый пароль</target>
+      </segment>
+    </unit>
+    <unit id="Hkmh4Tp" name="Repeat Password">
+      <segment>
+        <source>Repeat Password</source>
+        <target>Повторите пароль</target>
+      </segment>
+    </unit>
+    <unit id="Knrm5Px" name="plainPassword">
+      <segment>
+        <source>plainPassword</source>
+        <target>пароль (plainPassword)</target>
+      </segment>
+    </unit>
+    <unit id="fozSBW2" name="Title">
+      <segment>
+        <source>Title</source>
+        <target>Заголовок</target>
+      </segment>
+    </unit>
+    <unit id="3Qrnpcv" name="Save changes">
+      <segment>
+        <source>Save changes</source>
+        <target>Сохранить изменения</target>
+      </segment>
+    </unit>
+    <unit id="lpzL089" name="Email">
+      <segment>
+        <source>Email</source>
+        <target>Электронное письмо</target>
+      </segment>
+    </unit>
+    <unit id="wlM3BVR" name="Roles">
+      <segment>
+        <source>Roles</source>
+        <target>Уровни доступа</target>
+      </segment>
+    </unit>
+    <unit id="8Tpkui." name="Full name">
+      <segment>
+        <source>Full name</source>
+        <target>ФИО</target>
+      </segment>
+    </unit>
+    <unit id="Y9zriAC" name="Phone">
+      <segment>
+        <source>Phone</source>
+        <target>Телефон</target>
+      </segment>
+    </unit>
+    <unit id="Vu_PIJV" name="Address">
+      <segment>
+        <source>Address</source>
+        <target>Адрес</target>
+      </segment>
+    </unit>
+    <unit id=".GbXqym" name="Zip code">
+      <segment>
+        <source>Zip code</source>
+        <target>Почтовый индекс</target>
+      </segment>
+    </unit>
+    <unit id="wg5Q612" name="Is Deleted">
+      <segment>
+        <source>Is Deleted</source>
+        <target>Удалено?</target>
+      </segment>
+    </unit>
+    <unit id="k8kchR5" name="Price">
+      <segment>
+        <source>Price</source>
+        <target>Цена</target>
+      </segment>
+    </unit>
+    <unit id="giurjUG" name="Quantity">
+      <segment>
+        <source>Quantity</source>
+        <target>Количество</target>
+      </segment>
+    </unit>
+    <unit id="Um4Ah8w" name="Description">
+      <segment>
+        <source>Description</source>
+        <target>Описание</target>
+      </segment>
+    </unit>
+    <unit id="ziRL3Ar" name="Choose new image">
+      <segment>
+        <source>Choose new image</source>
+        <target>Выберите новое изображение</target>
+      </segment>
+    </unit>
+    <unit id="wMwLN_8" name="Is Published">
+      <segment>
+        <source>Is Published</source>
+        <target>Опубликовано?</target>
+      </segment>
+    </unit>
+    <unit id="KSwG8AR" name="Category">
+      <segment>
+        <source>Category</source>
+        <target>Категория</target>
+      </segment>
+    </unit>
+    <unit id="ka8XRfM" name="Please select a category">
+      <segment>
+        <source>Please select a category</source>
+        <target>Пожалуйста, выберите категорию</target>
+      </segment>
+    </unit>
+    <unit id="kg5BPH1" name="Status">
+      <segment>
+        <source>Status</source>
+        <target>Статус</target>
+      </segment>
+    </unit>
+    <unit id="tRLZfny" name="User">
+      <segment>
+        <source>User</source>
+        <target>Пользователь</target>
+      </segment>
+    </unit>
+    <unit id="wcIksDz" name="Admin">
+      <notes>
+        <note category="state" priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>Admin</source>
+        <target>Администратор</target>
+      </segment>
+    </unit>
+    <unit id="zVX3M_I" name="Super Admin">
+      <notes>
+        <note category="state" priority="1">obsolete</note>
+      </notes>
+      <segment>
+        <source>Super Admin</source>
+        <target>Супер Администратор</target>
+      </segment>
+    </unit>
+    <unit id="1wueJLy" name="Created">
+      <segment>
+        <source>Created</source>
+        <target>Создан</target>
+      </segment>
+    </unit>
+    <unit id="2kBN6xE" name="Denied">
+      <segment>
+        <source>Denied</source>
+        <target>Отклонен</target>
+      </segment>
+    </unit>
+    <unit id="kGEVZXO" name="Delivered">
+      <segment>
+        <source>Delivered</source>
+        <target>Доставлен</target>
+      </segment>
+    </unit>
+    <unit id="FUI3DkH" name="Complected">
+      <segment>
+        <source>Complected</source>
+        <target>Укомплектован</target>
+      </segment>
+    </unit>
+    <unit id="YHG5tWX" name="Processed">
+      <segment>
+        <source>Processed</source>
+        <target>Обработан</target>
+      </segment>
+    </unit>
+    <unit id="lWJ68xw" name="personal_account.resending_verify_email_link">
+      <segment>
+        <source>personal_account.resending_verify_email_link</source>
+        <target>Подтвердите свой email</target>
+      </segment>
+    </unit>
+    <unit id="LA4CX7e" name="personal_account.verify_email_link_send">
+      <segment>
+        <source>personal_account.verify_email_link_send</source>
+        <target>Письмо с подтверждением отправлено! Проверьте email.</target>
+      </segment>
+    </unit>
+    <unit id="_DgfpZL" name="personal_account.dashboard">
+      <segment>
+        <source>personal_account.dashboard</source>
+        <target>Админка</target>
+      </segment>
+    </unit>
+    <unit id="EhVukhv" name="Id">
+      <segment>
+        <source>Id</source>
+        <target>ID</target>
+      </segment>
+    </unit>
+    <unit id="SxuKo2C" name="Owner">
+      <segment>
+        <source>Owner</source>
+        <target>Владелец</target>
+      </segment>
+    </unit>
+    <unit id="naepTwi" name="Total price">
+      <segment>
+        <source>Total price</source>
+        <target>Общая стоимость</target>
+      </segment>
+    </unit>
+    <unit id="IYGXaTQ" name="From">
+      <segment>
+        <source>From</source>
+        <target>От</target>
+      </segment>
+    </unit>
+    <unit id="d1tb_WR" name="Created at">
+      <segment>
+        <source>Created at</source>
+        <target>Создан</target>
+      </segment>
+    </unit>
+    <unit id="9LBu9tP" name="To">
+      <segment>
+        <source>To</source>
+        <target>Для</target>
+      </segment>
+    </unit>
+    <unit id="DZl7LyU" name="login_social_network.yandex">
+      <segment>
+        <source>login_social_network.yandex</source>
+        <target>Авторизоваться через Яндекс</target>
+      </segment>
+    </unit>
+    <unit id="f75DMJI" name="login_social_network.vk">
+      <segment>
+        <source>login_social_network.vk</source>
+        <target>Авторизоваться через Вконтакт</target>
+      </segment>
+    </unit>
+    <unit id="vwH7yKg" name="login_social_network.github">
+      <segment>
+        <source>login_social_network.github</source>
+        <target>Авторизоваться через Гитхаб</target>
+      </segment>
+    </unit>
+    <unit id="U_e_xLK" name="admin.user_list.edit">
+      <segment>
+        <source>admin.user_list.edit</source>
+        <target>Редактировать</target>
+      </segment>
+    </unit>
+    <unit id="O49.BZq" name="admin.user_list.not_verified">
+      <segment>
+        <source>admin.user_list.not_verified</source>
+        <target>Не проверено</target>
+      </segment>
+    </unit>
+    <unit id="MjBzuxb" name="admin.user_list.verified">
+      <segment>
+        <source>admin.user_list.verified</source>
+        <target>Проверено</target>
+      </segment>
+    </unit>
+    <unit id="3XQLnLv" name="admin.user_list.id">
+      <segment>
+        <source>admin.user_list.id</source>
+        <target>Ид</target>
+      </segment>
+    </unit>
+    <unit id="imvhdji" name="admin.user_list.email">
+      <segment>
+        <source>admin.user_list.email</source>
+        <target>Почта</target>
+      </segment>
+    </unit>
+    <unit id="oUVglXT" name="admin.user_list.role">
+      <segment>
+        <source>admin.user_list.role</source>
+        <target>Роль</target>
+      </segment>
+    </unit>
+    <unit id="jEdlObq" name="admin.user_list.profile_info">
+      <segment>
+        <source>admin.user_list.profile_info</source>
+        <target>Информация</target>
+      </segment>
+    </unit>
+    <unit id="tZ6GW0o" name="admin.user_list.is_verified_email">
+      <segment>
+        <source>admin.user_list.is_verified_email</source>
+        <target>Почта проверена</target>
+      </segment>
+    </unit>
+    <unit id="..ZWjVX" name="admin.user_list.from_google">
+      <segment>
+        <source>admin.user_list.from_google</source>
+        <target>Google проверен</target>
+      </segment>
+    </unit>
+    <unit id="h0Dl98t" name="admin.user_list.from_yandex">
+      <segment>
+        <source>admin.user_list.from_yandex</source>
+        <target>Яндекс проверен</target>
+      </segment>
+    </unit>
+    <unit id="YEAkBLN" name="admin.user_list.from_vk">
+      <segment>
+        <source>admin.user_list.from_vk</source>
+        <target>Вконтакте проверен</target>
+      </segment>
+    </unit>
+    <unit id="2qVg_O." name="admin.user_list.from_github">
+      <segment>
+        <source>admin.user_list.from_github</source>
+        <target>Github проверен</target>
+      </segment>
+    </unit>
+    <unit id="sVcu6kb" name="personal_account.social_group.name">
+      <segment>
+        <source>personal_account.social_group.name</source>
+        <target>Название</target>
+      </segment>
+    </unit>
+    <unit id="8d3i.6z" name="personal_account.social_group.action">
+      <segment>
+        <source>personal_account.social_group.action</source>
+        <target>Действия</target>
+      </segment>
+    </unit>
+    <unit id="OlHpJ6k" name="personal_account.social_group.google">
+      <segment>
+        <source>personal_account.social_group.google</source>
+        <target>Гугл</target>
+      </segment>
+    </unit>
+    <unit id="cE4Odfx" name="personal_account.social_group.yandex">
+      <segment>
+        <source>personal_account.social_group.yandex</source>
+        <target>Яндекс</target>
+      </segment>
+    </unit>
+    <unit id="KjhXQI8" name="personal_account.social_group.vkontakte">
+      <segment>
+        <source>personal_account.social_group.vkontakte</source>
+        <target>Вконтакте</target>
+      </segment>
+    </unit>
+    <unit id="Y4hPdqD" name="personal_account.social_group.github">
+      <segment>
+        <source>personal_account.social_group.github</source>
+        <target>Гитхаб</target>
+      </segment>
+    </unit>
+    <unit id="GIzLkL2" name="personal_account.social_group.integration_service">
+      <segment>
+        <source>personal_account.social_group.integration_service</source>
+        <target>Сервис интеграции</target>
+      </segment>
+    </unit>
+    <unit id="I8Kt.td" name="personal_account.social_group.link">
+      <segment>
+        <source>personal_account.social_group.link</source>
+        <target>Привязать</target>
+      </segment>
+    </unit>
+    <unit id="LuEr.5y" name="personal_account.social_group.unlink">
+      <segment>
+        <source>personal_account.social_group.unlink</source>
+        <target>Отвязать</target>
+      </segment>
+    </unit>
+    <unit id="cpfVdd4" name="The social network has been successfully unlinked.">
+      <segment>
+        <source>The social network has been successfully unlinked.</source>
+        <target>Социальная сеть успешно отвязана.</target>
+      </segment>
+    </unit>
+    <unit id="yjTQYPm" name="The social network has been successfully linked.">
+      <segment>
+        <source>The social network has been successfully linked.</source>
+        <target>Социальная сеть успешно привязана.</target>
+      </segment>
+    </unit>
+    <unit id="90WFztC" name="You have already logged in to the site under the username of this social network">
+      <segment>
+        <source>You have already logged in to the site under the username of this social network</source>
+        <target>Под логином этой социальной сети уже авторизовались на сайте</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

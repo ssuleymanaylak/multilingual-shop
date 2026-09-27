@@ -1,0 +1,166 @@
+homepage.head: Homepage
+homepage.description: 'Main page of Symfony shop'
+registration_form.head: Registration
+registration_form.sing_up: 'Sing up'
+registration_form.enter_your_password: Password
+registration_form.enter_your_email: Email
+registration_form.agree_to_term: 'I agree to the privacy policy'
+'registration_form.privacy policy': 'privacy policy*'
+registration_form.placeholder.email: 'Please enter your email'
+registration_form.placeholder.plainPassword: 'Please enter your password'
+login_form.head: Authorization
+login_form.your_email: 'Email address'
+login_form.your_password: Password
+login_form.remember_me: 'Remember me'
+login_form.login_in: 'Log in'
+login_form.create_account: 'Create an Account'
+login_form.reset_password: 'Reset password'
+login_form.placeholder.email: 'Please enter your email'
+login_form.placeholder.password: 'Please enter your password'
+oauth.authentication.failure: 'Unable to sign in with the social network. Sign in another way and link it from your profile if needed.'
+personal_account.head: 'Welcome, to your profile'
+personal_account.labels.email: 'Your email'
+personal_account.labels.full_name: 'Your full name'
+personal_account.labels.phone: 'Your phone'
+personal_account.labels.address: 'Your address'
+personal_account.labels.zipcode: 'Your zipcode'
+personal_account.logout: Logout
+personal_account.message: 'Please, before you make some order fill your full information.'
+personal_account.edit_profile: 'Edit profile info'
+personal_account.edit.head: 'Edit profile'
+personal_account.edit.labels.full_name: 'Enter full name'
+personal_account.edit.labels.phone: 'Enter phone'
+personal_account.edit.labels.address: 'Enter address'
+personal_account.edit.labels.zipcode: 'Enter zipcode'
+personal_account.edit.save_changes: 'Save changes'
+login_social_network.google: 'Login with Google'
+login_social_network.facebook: 'Login with Facebook'
+login_social_network.linkedin: 'Sign in with LinkedIn'
+similar_products.head: 'We recommend'
+similar_products.new: New
+similar_products.sale: Sale
+product.add_to_cart: 'Add to cart'
+product.new: New
+product.products_not_fount: 'Products not fount'
+product.image_unavailable: 'Image unavailable'
+category.show_me: 'Show me'
+category.new_collection: 'New Collection'
+category.unique: Unique
+cart.head: Cart
+cart.make_order: 'Make Order'
+cart.view_cart: View_cart
+cart.checkout: Checkout
+cart.total_price: 'Total price'
+cart.cart_empty: 'Your cart is empty ...'
+cart.login: Login
+cart.product: Product
+cart.quantity: Quantity
+cart.price: Price
+cart.actions: Actions
+cart.total: Total
+cart.unavailable_products: 'Some products in your cart are unavailable. Remove them before checkout.'
+cart.product_deleted: 'This product has been removed and can no longer be ordered.'
+cart.product_unpublished: 'This product is no longer on sale and cannot be ordered.'
+header_menu.en: En
+header_menu.ru: Rus
+header_menu.profile: Profile
+header_menu.login: Login
+footer.user_links.head: 'Useful links'
+footer.user_links.homepage: Homepage
+footer.user_links.sing_up: 'Sign up'
+footer.user_links.login: Login
+footer.user_links.logout: 'Log out'
+footer.my_account.head: 'My Account'
+footer.my_account.sing_up: 'Sign in'
+footer.my_account.view_cart: 'View cart'
+footer.my_account.my_profile: 'My profile'
+footer.сhange_language.head: 'Change language'
+footer.сhange_language.russian: Russian
+footer.сhange_language.english: English
+footer.copyright.prefix: 'Copyright © '
+footer.copyright.owner: 'Alexander Yurchenko'
+footer.copyright.suffix: '. All rights reserved.'
+'You have to login in order to access this page.': 'You have to login in order to access this page.'
+'An email has been sent. Please check inbox to find password and verified your email': 'An email has been sent. Please check inbox to find password and verified your email'
+'Please log in to the site!': 'Please log in to the site!'
+'The order successfully created': 'The order successfully created'
+'An email has been sent. Please check your inbox to complete registration.': 'An email has been sent. Please check your inbox to complete registration.'
+'Your email address has been verified.': 'Your email address has been verified.'
+'Your changes were saved!': 'Your changes were saved!'
+'Something went wrong. Please check!': 'Something went wrong. Please check!'
+email: email
+'New password': 'New password'
+'Repeat Password': 'Repeat Password'
+plainPassword: plainPassword
+Title: Title
+'Save changes': 'Save changes'
+Email: Email
+Roles: Roles
+'Full name': 'Full name'
+Phone: Phone
+Address: Address
+'Zip code': 'Zip code'
+'Is Deleted': 'Is Deleted'
+Price: Price
+Quantity: Quantity
+Description: Description
+'Choose new image': 'Choose new image'
+'Is Published': 'Is Published'
+Category: Category
+'Please select a category': 'Please select a category'
+Status: Status
+User: User
+personal_account.dashboard: Admin
+personal_account.resending_verify_email_link: 'Confirm your email'
+personal_account.verify_email_link_send: 'Confirmation email has been sent! Check the email.'
+'Created at': 'Created at'
+To: To
+From: From
+'Total price': 'Total price'
+Denied: Denied
+Processed: Processed
+Created: Created
+Owner: Owner
+Complected: Complected
+Delivered: Delivered
+Id: Id
+login_social_network.yandex: 'Login with Yandex'
+login_social_network.vk: 'Login with Vkontakte'
+login_social_network.github: 'Login with Github'
+admin.user_list.id: Id
+admin.user_list.email: Email
+admin.user_list.role: Role
+admin.user_list.profile_info: 'Profile info'
+admin.user_list.is_verified_email: 'Is verified email'
+admin.user_list.from_google: 'From Google'
+admin.user_list.from_yandex: 'From Yandex'
+admin.user_list.from_vk: 'From Vk'
+admin.user_list.from_github: 'From Github'
+admin.user_list.verified: Verified
+admin.user_list.not_verified: 'Not Verified'
+admin.user_list.edit: Edit
+personal_account.social_group.name: Name
+personal_account.social_group.action: Action
+personal_account.social_group.google: Google
+personal_account.social_group.yandex: Yandex
+personal_account.social_group.vkontakte: Vkontakte
+personal_account.social_group.github: Github
+personal_account.social_group.facebook: Facebook
+personal_account.social_group.linkedin: LinkedIn
+personal_account.social_group.integration_service: 'Integration Service'
+personal_account.social_group.link: Link
+personal_account.social_group.unlink: Unlink
+personal_account.social_group.oauth_unlink.title: Confirm unlink
+personal_account.social_group.oauth_unlink.warning: 'To unlink %provider%, confirm your current password.'
+personal_account.social_group.oauth_unlink.current_password: Current password
+personal_account.social_group.oauth_unlink.submit: Unlink account
+personal_account.social_group.oauth_unlink.cancel: Cancel
+personal_account.social_group.oauth_link.title: 'Confirm account linking'
+personal_account.social_group.oauth_link.warning: 'To link %provider%, confirm your current password. You will then continue to the provider.'
+personal_account.social_group.oauth_link.current_password: 'Current password'
+personal_account.social_group.oauth_link.submit: 'Continue to provider'
+personal_account.social_group.oauth_link.cancel: Cancel
+personal_account.social_group.oauth_link.failure: 'The social account could not be linked.'
+'The social network has been successfully unlinked.': 'The social network has been successfully unlinked.'
+'The social network has been successfully linked.': 'The social network has been successfully linked.'
+'You have already logged in to the site under the username of this social network': 'You have already logged in to the site under the username of this social network'

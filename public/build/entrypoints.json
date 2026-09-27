@@ -1,0 +1,69 @@
+{
+  "entrypoints": {
+    "section-front": {
+      "js": [
+        "/build/runtime.686d9699.js",
+        "/build/863.54b73d62.js",
+        "/build/981.600bfb07.js",
+        "/build/589.cba62294.js",
+        "/build/section-front.98f32b63.js"
+      ],
+      "css": [
+        "/build/section-front.1760b452.css"
+      ]
+    },
+    "section-admin": {
+      "js": [
+        "/build/runtime.686d9699.js",
+        "/build/863.54b73d62.js",
+        "/build/981.600bfb07.js",
+        "/build/969.cde76ac2.js",
+        "/build/589.cba62294.js",
+        "/build/150.1620174f.js",
+        "/build/section-admin.388cf25c.js"
+      ],
+      "css": [
+        "/build/section-admin.49236359.css"
+      ]
+    },
+    "appAdminOrder": {
+      "js": [
+        "/build/runtime.686d9699.js",
+        "/build/863.54b73d62.js",
+        "/build/746.9f05fea8.js",
+        "/build/appAdminOrder.6eb93f76.js"
+      ]
+    },
+    "appFrontCartShow": {
+      "js": [
+        "/build/runtime.686d9699.js",
+        "/build/863.54b73d62.js",
+        "/build/981.600bfb07.js",
+        "/build/746.9f05fea8.js",
+        "/build/969.cde76ac2.js",
+        "/build/427.8970c3bb.js",
+        "/build/554.ae79ae2d.js",
+        "/build/appFrontCartShow.e2ad1348.js"
+      ]
+    },
+    "appFrontMenuCart": {
+      "js": [
+        "/build/runtime.686d9699.js",
+        "/build/863.54b73d62.js",
+        "/build/981.600bfb07.js",
+        "/build/746.9f05fea8.js",
+        "/build/969.cde76ac2.js",
+        "/build/427.8970c3bb.js",
+        "/build/appFrontMenuCart.b149face.js"
+      ]
+    },
+    "email": {
+      "js": [
+        "/build/runtime.686d9699.js"
+      ],
+      "css": [
+        "/build/email.fbbbf628.css"
+      ]
+    }
+  }
+}
