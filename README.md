@@ -4,7 +4,7 @@ git clone https://github.com/ssuleymanaylak/multilingual-shop.git
 ```
 
 ```
-cd symfony-shop
+cd multilingual-shop
 ```
 ```
 git lfs install
