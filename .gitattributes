@@ -1,3 +1,1 @@
-bin/chrome-linux64-154.0.8037.57.zip filter=lfs diff=lfs merge=lfs -text
-bin/chrome-linux64-*.zip filter=lfs diff=lfs merge=lfs -text
 bin/*.zip filter=lfs diff=lfs merge=lfs -text
